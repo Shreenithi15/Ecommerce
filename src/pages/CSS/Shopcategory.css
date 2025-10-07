@@ -46,13 +46,14 @@
 
 /* Product grid */
 .shopcategory-product {
-    margin: 40px 10%;
+    margin: 50px 95px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 60px 40px;
+    gap: 100px;
+
 }
 .shopcategory-loadmore{
-    display:flex;
+    display:grid;
     justify-content:center ;
     align-items: center;
     margin: 150px auto;

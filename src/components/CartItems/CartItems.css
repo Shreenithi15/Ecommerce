@@ -1,101 +1,157 @@
-.cartitems{
-    margin:100px 170px;
+.cartitems {
+  margin: 100px 170px;
 }
-.cartitems hr{
-    height:3px;
-    background:#e2e2e2;
-    border:0;
 
+/* Divider lines */
+.cartitems hr {
+  height: 2px;
+  background: #e2e2e2;
+  border: 0;
 }
-.cartitems-format-main{
-    display:grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    gap:75px;
-    padding: 20px 0px;
-    color:#454545;
-    font-size: 18px;
-    font-weight: 600;
-}
-.cartitems-format{
-    font-size: 17px;
-    font-weight: 500;
-}
-.carticon-product-icon{
-    height:62px;
 
+/* Top row headings */
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
 
+/* Each cart row */
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 15px 0;
+  color: #333;
 }
-.cartitems-removeicon{
-    width:15px ;
-    margin:0px 40px;
-    cursor:pointer;
-}
-.cartitems-quantity{
-    width:64px;
-    height:50px;
-    border:2px solid #ebebeb;
-    background: white;
 
+/* Product image */
+.carticon-product-icon {
+  height: 80px;
+  width: auto;
+  border-radius: 5px;
+  object-fit: cover;
 }
-.cartitems-down{
-    display:flex;
-    margin:100px 0px;
-}
-.cartitems-total{
-    flex:1;
-    display:flex;
-    flex: column;
-    margin-right: 200px;
-    gap:40px;
-}
-.cartitems-total-item{
-    display:flex;
-    justify-content: space-between;
-    padding: 15px 0px;
 
+/* Remove icon */
+.cartitems-removeicon {
+  width: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.cartitems-total button{
-    width:262px;
-    height:58px;
-    outline:none;
-    border:none;
-    background:#ff5a5a;
-    color:white;
-    font-size: 16px;
-    font-weight: 600;
-    cursor:pointer;
 
+.cartitems-removeicon:hover {
+  transform: scale(1.2);
 }
-.cartitems-promocode{
-    flex:1;
-    font-size: 16px;
-    font-weight: 500;
-}
-.cartitems-promocode p{
-    color:#555;
-}
-.cartitem-promobox{
-    width:504px;
-    margin-top: 15px;
-    padding-left:20px;
-    height:58px;
-    background: #eaeaea;
-}
-.cartitem-promobox input{
-    border:none;
-    outline:none;
-    background: transperent;
-    font-size: 16px;
-    width:330px;
-    height:50px;
-}
-.cartitem-promobox button{
-    width:170px;
-    height:58px;
-    font-size: 16px;
-    background: black;
-    color:white;
-    cursor:pointer;
 
+/* Quantity box */
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* Bottom section */
+.cartitems-down {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  gap: 40px;
+}
+
+/* Left column for total */
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 300px;
+}
+
+/* Each total item (subtotal, shipping, total) */
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 17px;
+}
+
+/* Checkout button */
+.cartitems-total button {
+  width: 262px;
+  height: 58px;
+  border: none;
+  outline: none;
+  background: #ff4141;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cartitems-total button:hover {
+  background: #e63b3b;
+}
+
+/* Promo code section */
+.cartitems-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartitems-promocode p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Promo code box */
+.cartitem-promobox {
+  display: flex;
+  align-items: center;
+  width: 504px;
+  height: 58px;
+  background: #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Promo code input */
+.cartitem-promobox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 0 15px;
+  height: 100%;
+}
+
+/* Submit button */
+.cartitem-promobox button {
+  width: 170px;
+  height: 100%;
+  font-size: 16px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cartitem-promobox button:hover {
+  background: #222;
 }
